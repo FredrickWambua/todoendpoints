@@ -6,9 +6,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const config_1 = __importDefault(require("./Config/config"));
 const mssql_1 = __importDefault(require("mssql"));
+const router_1 = __importDefault(require("./Routes/router"));
 const app = (0, express_1.default)();
+// app.use(cors)
 app.use(express_1.default.json());
-app.listen(4500, () => {
+app.use('/todo', router_1.default);
+app.listen(8000, () => {
     console.log('todo app is listening');
 });
 const checkConnection = async () => {

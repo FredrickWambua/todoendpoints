@@ -2,7 +2,7 @@
   "name": "todoendpoints",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "todo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon todo.ts"
@@ -17,6 +17,10 @@
     "@types/node": "^17.0.31",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
+    "express": "^4.18.1",
     "mssql": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.4"
   }
 }
