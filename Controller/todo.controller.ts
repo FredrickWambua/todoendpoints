@@ -12,6 +12,8 @@ interface Todo {
 }
 
 
+
+
 // creating a todo
 export const createTodo = async(req:Request, res:Response)=>{
     try {
@@ -108,3 +110,4 @@ export const deleteTodo:RequestHandler = async(req, res)=>{
         res.json({error:error.message})
     }    
 }
+
